@@ -38,18 +38,19 @@ header {
 #description {
   display: flex;
   justify-content: center;
-  text-align: end;
   max-width: 900px;
   width: 100%;
   margin: 0;
   padding: 0;
+  font-size: 15px;
 }
 #form {
   display: flex;
   flex-direction: column;
   max-width: 900px; /* Define a largura máxima do formulário */
   width: 100%; /* Para garantir que ele não exceda a largura máxima */
-  margin: 200px auto auto auto;
+  margin: 150px auto auto auto;
+  font-size: 15px;
 
   background-color: rgba(
     255,
@@ -70,6 +71,7 @@ fieldset {
     255,
     0.5
   ); /* Cor branca com 50% de opacidade */
+  font-size: vw;
 }
 legend {
   font-weight: bold;
