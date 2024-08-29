@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/Projeto1/style.css" />
+    <script>
+      let name = prompt("Diga seu nome")
+    </script>
+  </head>
+  <body>
+    <h1 id="title">Formulário</h1>
+    <div id="usuario">
+      <script>
+        document.write("Olá " + name)
+      </script>
+    </div>
+    <p class="bold" id="description">
+      Cadastre-se para entrar em nosso grupo exclusivo, e receba as novidades
+      sobre a nova lei de Licitações Públicas
+    </p>
+    <div id="form">
+    <form id="survey-form">
+      <fieldset>
+        <label class="bold" id="name-label" for="name"
+          >Insira seu nome:
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Lilian de Oliveira"
+            required
+          />
+        </label>
+
+        <label class="bold" id="email-label" for="email">
+          Inclua seu email:
+          <input
+            id="email"
+            type="email"
+            placeholder="lilian@oliveira.com"
+            required
+          />
+        </label>
+
+        <label class="bold" id="number-label" for="number">
+          Quantos anos você tem?
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="120"
+            placeholder="11"
+            required
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label class="bold" for="dropdown"
+          >Onde pretende utilizar nossa ferramenta?
+          <select id="dropdown" name="usage" required>
+            <option value="">Selecione</option>
+            <option value="work">No trabalho</option>
+            <option value="study">Para estudos</option>
+            <option value="information">
+              Para ficar por dentro das licitações do seu Órgão
+            </option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Com qual frequência você utiliza nossa página?</legend>
+        <label for="frequency1">
+          <input
+            id="frequency1"
+            type="radio"
+            name="frequency"
+            value="1"
+            checked
+          />
+          Exporadicamente
+        </label>
+        <label for="frequency2">
+          <input id="frequency2" type="radio" name="frequency" value="2" />
+          Habitualmente
+        </label>
+        <label for="frequency3">
+          <input id="frequency3" type="radio" name="frequency" value="3" /> Com
+          muita frequência
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Por onde conheceu nossa página?</legend>
+        <label>
+          <input type="checkbox" name="referral" value="op1" />Linkedin</label
+        >
+        <label
+          ><input type="checkbox" name="referral" value="op2" />Instagram</label
+        >
+        <label
+          ><input type="checkbox" name="referral" value="op3" />Facebook</label
+        >
+        <label
+          ><input type="checkbox" name="referral" value="op4" />Outros</label
+        >
+      </fieldset>
+      <fieldset>
+        <label class="bold"
+          >Compartilhe sua opinião a respeito da nova lei de licitações <br />
+          <textarea rows="3" cols="49" placeholder="Escreva aqui"> </textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input id="submit" type="submit" />
+      </fieldset>
+    </form>
+    </div>
+  </body>
+</html>
