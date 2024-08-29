@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2018/09/10/16/05/judgment-3667391_1280.jpg");
+  background-size: cover; /* cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem de fundo */
+}
+
+* {
+  font-family: Titillium Web, sans-serif;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+#usuario {
+  border: 1px solid red;
+  font-size: xx-large;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+  text-align: end;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 900px;
+  width: 100%;
+  margin: 0;
+  border: 1px red solid;
+  padding: 0;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px; /* Define a largura máxima do formulário */
+  width: 100%; /* Para garantir que ele não exceda a largura máxima */
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Ajuste a opacidade se necessário */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao formulário */
+  border-radius: 10px; /* Bordas arredondadas */
+  justify-content: center;
+  align-items: center;
+  margin:auto ;
+  
+}
+fieldset {
+  max-width: 900px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Cor branca com 50% de opacidade */
+}
+legend {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.bold {
+  font-weight: bold;
+}
