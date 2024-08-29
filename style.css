@@ -9,27 +9,30 @@ body {
   font-family: Titillium Web, sans-serif;
 }
 
-#title {
+header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #usuario {
-  border: 1px solid red;
   font-size: xx-large;
   font-weight: 700;
   display: flex;
   justify-content: center;
+  padding: auto;
+  max-width: 170px;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 #description {
   display: flex;
   justify-content: center;
   text-align: end;
-  background-color: rgba(255, 255, 255, 0.5);
   max-width: 900px;
   width: 100%;
   margin: 0;
-  border: 1px red solid;
   padding: 0;
 }
 #form {
@@ -48,8 +51,7 @@ body {
   border-radius: 10px; /* Bordas arredondadas */
   justify-content: center;
   align-items: center;
-  margin:auto ;
-  
+  margin: auto;
 }
 fieldset {
   max-width: 900px;
